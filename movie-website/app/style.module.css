@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(32, 171, 231);
+}
+.nav div{
+    margin: 30px;
+    border: solid rgb(249, 205, 205);
+    padding: 5px;
+    cursor: pointer;
+}
+.nav div:hover{
+    background: rgb(112, 110, 110);
+}
