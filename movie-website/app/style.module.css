@@ -12,3 +12,13 @@
 .nav div:hover{
     background: rgb(112, 110, 110);
 }
+.title{
+    text-align: center;
+    
+}
+.about {
+    text-align: start;
+}
+.movieList{
+    background: black;
+}
