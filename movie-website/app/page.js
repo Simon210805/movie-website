@@ -1,18 +1,9 @@
 import Link from 'next/link';
 import style from './style.module.css'
+import NavBar from './components/nav-bar';
 export default function HOME(params) {
     return <div>
-        <div className={style.nav}> 
-        <div>
-        <Link href='/'>Home</Link>
-      </div>
-      <div>
-      <Link href='/'>About</Link>
-      </div> 
-      <div>
-          <Link href='/'>Contsct Us</Link>
-      </div>
-        </div>
-        
+        <NavBar/>
         Movie Website</div>
 }
+
