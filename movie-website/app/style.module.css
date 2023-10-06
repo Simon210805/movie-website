@@ -1,7 +1,7 @@
 .nav{
     display: flex;
     justify-content: space-around;
-    background: rgb(32, 171, 231);
+    background: rgb(80, 197, 247);
 }
 .nav div{
     margin: 30px;
@@ -13,12 +13,20 @@
     background: rgb(112, 110, 110);
 }
 .title{
-    text-align: center;
+    text-align: start;
+
+    
     
 }
 .about {
     text-align: start;
 }
 .movieList{
-    background: black;
+    margin: 2px;
+   padding: 4px;
+    display: flex;
+    background: rgb(70, 196, 230);
+    text-align: start;
+flex-wrap: wrap;
 }
+
