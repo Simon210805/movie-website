@@ -6,8 +6,9 @@
 .nav div{
     margin: 30px;
     border: solid rgb(249, 205, 205);
-    padding: 5px;
+    padding: 10px 30px;
     cursor: pointer;
+    border-radius: 30px;
 }
 .nav div:hover{
     background: rgb(112, 110, 110);

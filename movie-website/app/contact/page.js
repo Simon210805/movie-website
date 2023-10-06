@@ -5,5 +5,6 @@ export default function contact() {
          <NavBar/>
          <style.nav/>
         <h1 className={style.title}>yohanness803@gmail.com</h1>
+        
         </div>
 } 
