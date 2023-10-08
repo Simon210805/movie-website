@@ -3,15 +3,17 @@ import style from "../style.module.css"
 export default function NavBar() {
     return (<div>
         <div className={style.nav}> 
-<div>
-<Link href='/'>Home</Link>
-</div>
-<div>
-<Link href='/about'>About</Link>
-</div> 
-<div>
-  <Link href='/contact'>Contact Us</Link>
-</div>
+<Link href='/'>
+        <div>Home</div>
+</Link>
+
+<Link href='/about'>
+        <div>About</div>
+        </Link>
+  <Link href='/contact'>
+        <div>Contact Us</div>
+        </Link>
+
 </div>
         </div>);
 }

@@ -30,4 +30,43 @@
     text-align: start;
 flex-wrap: wrap;
 }
-
+/* .container{
+background-color:rgb(82, 77, 77);
+display: flex;
+text-align: center;
+justify-content: center;
+backdrop-filter: blur(4p) saturate(180%);
+} */
+.container{
+    justify-content: center;
+}
+ .container form{
+    background:  rgb(83, 82, 82);
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+text-align: center;
+border-radius: 60px;
+padding: 10px 20px;
+} 
+.container input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: beige;
+}
+.container button img{
+    width: 55px;
+}
+.container button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background:  rgb(103, 103, 100);
+    cursor: pointer;
+}

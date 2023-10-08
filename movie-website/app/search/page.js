@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
 import { Movie } from "../components/movie";
-
+  import {AiOutlineSearch} from 'react-icons/ai'
+  import style from "../style.module.css"
 export default function Search() {
   const [state, setState] = useState("");
 
-  console.log("state", state);
+
 
   // Function
   const searchMovie = async (event) => {
@@ -20,7 +21,7 @@ export default function Search() {
     const convertedMovieTitle = searchTitle.replace(/ /g, "+");
 
     const getMovieFromAPI = await fetch(
-      `http://www.omdbapi.com/?t=${convertedMovieTitle}&apikey=95282d64`
+      `http://www.omdbapi.com/?t=${convertedMovieTitle}&apikey=${process.env.MOVIE_API_KEY}`
     );
 
     const movieJson = await getMovieFromAPI.json();
@@ -30,6 +31,7 @@ export default function Search() {
 
   return (
     <div>
+    <div className={style.container}>
       <form onSubmit={searchMovie}>
         <input
           type="text"
@@ -37,10 +39,13 @@ export default function Search() {
           id="movieTitle"
           placeholder="search for a movie"
         />
-        <button type="submit">Search</button>
+        <button type="submit">
+        <AiOutlineSearch/>
+        </button>
       </form>
       {state ? <Movie movie={state} /> : undefined}
-      <br />
+     
+      </div>
     </div>
   );
 }

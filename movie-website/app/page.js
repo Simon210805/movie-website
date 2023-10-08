@@ -10,6 +10,7 @@ export default function HOME({params}) {
     return <Movie movie={movie} key={movie.Title}/>
   })
     return <div>
+    
         <SearchMovie />
       <div className={style.movieList}>  {movieList}</div>
         </div>
