@@ -70,3 +70,36 @@ padding: 10px 20px;
     background:  rgb(103, 103, 100);
     cursor: pointer;
 }
+.con h1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.con input{
+    display: flex;
+    justify-content: space-evenly;
+    top: 50px; 
+    margin: 1% 45%;
+    width: 300px;
+    height: 25px;
+    padding: 20px;
+    font-size: 28px;
+}
+.con button{
+    display: flex;
+    justify-content: center;
+    margin: 5% 50%;
+    height: 35px;
+    padding: 5px 25px;
+    font-size: 20px;
+}
+.con button:hover{
+    background:  rgb(172, 209, 221);
+}
+.intro li {
+    padding: 5px;
+    font-size: 29px;
+}
+.intro p {
+    padding: 5px;
+    font-size: 22px;
+}

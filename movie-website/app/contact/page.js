@@ -1,9 +1,29 @@
 import style from "../style.module.css"
 import NavBar from "../components/nav-bar"
 export default function contact() {
-    return <div>
+    return <div  className={style.con}>
          
-        <h1 className={style.title}>yohanness803@gmail.com</h1>
+        <h1>User Name</h1>
+       <form>
+       <input  type="text" 
+        name="user name"
+        id="user name"
+        placeholder="user name"
+       />
+          <h1>Last Name</h1>
+          <input  type="text" 
+        name="last name"
+        id="last name"
+        placeholder="last name"
+       />
+        <h1>Email</h1>
+        <input  type="text" 
+        name="Email"
+        id="Email"
+        placeholder="Email"
+       />
+       <button type="Submit">Submit</button>
+       </form>
         
         </div>
 } 
