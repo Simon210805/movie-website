@@ -11,7 +11,7 @@ export default function HOME({params}) {
   })
     return <div>
     
-        <SearchMovie />
+        <SearchMovie apiKey={`${process.env.MOVIE_API_KEY}`} />
       <div className={style.movieList}>  {movieList}</div>
         </div>
 }

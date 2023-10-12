@@ -4,6 +4,7 @@ import style from "../style.module.css"
 import NavBar from "../components/nav-bar"
 import { Movie } from '../components/movie';
 export default  function about ( ) {
+  console.log('MOVIE_API_KEY',process.env.MOVIE_API_KEY)
   return (
    <div className= {style.intro}> 
     <h1>ን 6ተ ሰሙን ዝከደ ዝወሰድናዮ course ምምዕባል software ምስ መምህር ናሆም ክንረኣብ!!</h1>

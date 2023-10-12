@@ -3,10 +3,8 @@ import { useState } from "react";
 import { Movie } from "../components/movie";
   import {AiOutlineSearch} from 'react-icons/ai'
   import style from "../style.module.css"
-export default function Search() {
+export default function Search({apiKey}) {
   const [state, setState] = useState("");
-
-
 
   // Function
   const searchMovie = async (event) => {
@@ -17,11 +15,11 @@ export default function Search() {
       setState("");
       return;
     }
-
+// console.log('MOVIE_API_KEY',process.env.MOVIE_API_KEY)
     const convertedMovieTitle = searchTitle.replace(/ /g, "+");
 
     const getMovieFromAPI = await fetch(
-      `http://www.omdbapi.com/?t=${convertedMovieTitle}&apikey=${process.env.MOVIE_API_KEY}`
+     `http://www.omdbapi.com/?t=${convertedMovieTitle}&apikey=${apiKey}`
     );
 
     const movieJson = await getMovieFromAPI.json();
