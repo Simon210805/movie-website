@@ -38,21 +38,24 @@ justify-content: center;
 backdrop-filter: blur(4p) saturate(180%);
 } */
 .container{
-    justify-content: center;
+   
+    justify-content: center; 
+   background:  rgb(70, 196, 230);
 }
  .container form{
     background:  rgb(83, 82, 82);
     width: 100%;
     max-width: 700px;
-    display: flex;
+    display: flex; 
 text-align: center;
-border-radius: 60px;
+border-radius: 60px; 
 padding: 10px 20px;
 } 
 .container input{
-    background: transparent;
-    flex: 1;
+     background: transparent;  
+    flex: 1; 
     border: 0;
+    margin: 5px;
     outline: none;
     padding: 10px 20px;
     border-radius: 50%;
