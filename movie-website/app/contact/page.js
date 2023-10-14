@@ -22,8 +22,9 @@ export default function contact() {
         id="Email"
         placeholder="Email"
        />
-       <button type="Submit">Submit</button>
+         <button type="Send">Send</button>
+       
+       
        </form>
-        
         </div>
 } 

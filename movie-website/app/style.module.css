@@ -1,7 +1,7 @@
 .nav{
     display: flex;
     justify-content: space-around;
-    background: rgb(80, 197, 247);
+    background: rgb(50, 183, 240);
 }
 .nav div{
     margin: 30px;
@@ -73,6 +73,11 @@ padding: 10px 20px;
     background:  rgb(103, 103, 100);
     cursor: pointer;
 }
+.con {
+    background:  rgb(52, 84, 91) ;
+    width: 100vh 100vh;
+    height: 100vh;
+}
 .con h1{
     display: flex;
     justify-content: space-evenly;
@@ -96,7 +101,17 @@ padding: 10px 20px;
     font-size: 20px;
 }
 .con button:hover{
-    background:  rgb(172, 209, 221);
+    background:  rgb(110, 90, 103);
+}
+.des{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.intro {
+    background:  rgb(33, 77, 89);
+    width: 100vh 100vh;
+    height: 100vh;
 }
 .intro li {
     padding: 5px;
